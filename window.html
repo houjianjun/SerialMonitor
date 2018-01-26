@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style/window.css">
+	</head>
+	<body>
+		<div id="title">
+			<h1>串口监视</h1>
+		</div>
+		<hr />
+		<div id="send_line">
+			<input type="text" id="send_text" />
+			<select id="endofline_combobox">
+				<option value="nothing">没有结束符</option>
+				<option value="NL">换行符</option>
+				<option value="CR">回车</option>
+				<option value="NLCR">NL和 CR</option>
+			</select>
+			<input type="button" id="send_button" value="发送" />
+		</div>
+		<div id="white_space"></div>
+		<!--接受数据只读-->
+		<div id="receive_area">
+			<textarea id="receive_textarea" readonly></textarea>
+		</div>
+
+		<div id="white_space"></div>
+		<hr />
+		<div id="connect_line">
+			<input type="button" id="clear_button" value="全部清空" />
+			<label for="serial_ports" id="serial_ports_label" class="label">串口号:</label>
+			<select id="serial_ports_combobox" class="combobox">
+			</select>
+			<label for="baud_rates" id="baud_rates_label" class="label">波特率:</label>
+			<select id="baud_rates_combobox" class="combobox">
+				<option value="300">300</option>
+				<option value="1200">1200</option>
+				<option value="2400">2400</option>
+				<option value="4800">4800</option>
+				<option value="9600">9600</option>
+				<option value="19200">19200</option>
+				<option value="38400">38400</option>
+				<option value="57600">57600</option>
+				<option value="115200">115200</option>
+			</select>
+			<input type="button" id="connect_button" value="连接" />
+			
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

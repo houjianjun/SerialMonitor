@@ -1,0 +1,15 @@
+{
+  "name": "串口监视",
+  "description": "简单的串行监控,类似于一个包含在Arduino IDE",
+  "version": "1.1",
+  "manifest_version": 2,
+  "permissions": ["serial"],
+  "minimum_chrome_version": "23",
+  "app": {
+    "background": {
+      "scripts": ["js/background.js"],
+	    "transient": true
+    }
+  },
+  "icons": { "16": "img/icon_16.png", "128": "img/icon_128.png" }
+}

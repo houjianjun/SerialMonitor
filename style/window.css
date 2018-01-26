@@ -1,0 +1,33 @@
+#title {
+	text-align: center;
+}
+
+#white_space {
+	height: 20px;
+}
+
+#send_text {
+	width: 330px;
+}
+
+#send_button {
+	width: 100px;
+}
+
+#endofline_combobox {
+	width: 120px;
+}
+
+#receive_area {
+	height: 250px;
+}
+
+#receive_textarea {
+	width: 98%;
+	height: 100%;
+	resize: none;
+}
+
+#connect_line {
+	text-align: right;
+}
